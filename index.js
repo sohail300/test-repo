@@ -10,4 +10,10 @@ app.get('/', (req, res) => {
     res.send('Root Page');
 })
 
+
+app.get('/display', (req, res) => {
+    console.log('Display Page');
+    res.send('Display Page');
+})
+
 app.listen(3000, () => console.log('Server running on port 3000'));
